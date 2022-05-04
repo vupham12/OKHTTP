@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vla"
+    tools:context=".activity.Showdetails">
+
+<ImageView
+    android:scaleType="centerCrop"
+    android:id="@+id/viewpar"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    tools:ignore="MissingConstraints"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#4D4E50"
+            android:contentDescription="@string/app_name"
+            android:padding="3dp"
+            android:src="@drawable/ic_back"
+            tools:ignore="MissingConstraints" />
+        
+        <ImageView
+            android:id="@+id/imge_details"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBottom_toBottomOf="@+id/viewpar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpar"
+            app:riv_corner_radius="6dp"/>
+    
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/tx.namedetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:text="@string/app_name"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imge_details"
+        app:layout_constraintTop_toBottomOf="@id/viewpar"/>
+
+    <TextView
+        android:id="@+id/tx.iddetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/tx.namedetail"
+        app:layout_constraintStart_toStartOf="@id/tx.namedetail"
+        app:layout_constraintTop_toBottomOf="@id/tx.namedetail" />
+
+    <TextView
+
+        android:id="@+id/tx.noidung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/imge_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/imge_details"
+        app:layout_constraintTop_toBottomOf="@id/imge_details"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
